@@ -4,4 +4,14 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "argparse>=1.4.0",
+    "logging>=0.4.9.6",
+    "monai>=1.6.0",
+    "nibabel>=5.4.2",
+    "numpy>=2.5.0",
+    "pandas>=3.0.3",
+    "pathlib>=1.0.1",
+    "scikit-learn>=1.9.0",
+    "torch>=2.12.1",
+]
