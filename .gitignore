@@ -1,0 +1,26 @@
+# OS-generated files
+.DS_Store          
+Thumbs.db          
+*.swp              
+*.swo              
+
+# IDE/Editor files
+.idea/            
+.vscode/           
+*.sublime-workspace 
+*.sublime-project
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+
+# Environment files
+.env
+.env.local
+.env*.local
+
+# Data
+data/
+
+
