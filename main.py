@@ -1,6 +1,5 @@
-def main():
-    print("Hello from aneu-repo!")
+from classification_pipeline import load_data
 
 
 if __name__ == "__main__":
-    main()
+    load_data("data/images_preprocessed")
