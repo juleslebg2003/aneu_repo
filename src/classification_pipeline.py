@@ -258,7 +258,8 @@ def retrain_and_save(
     log.info("Retraining on full dataset...")
     clf = build_classifier()
     clf.fit(X, y)
- 
+    
+    """
     model_path = output_dir / "baseline_v0_model.joblib"
     joblib.dump(clf, str(model_path))
     log.info(f"Model saved → {model_path}")
@@ -267,14 +268,14 @@ def retrain_and_save(
     with open(results_path, "w") as f:
         json.dump(cv_results, f, indent=2)
     log.info(f"CV results saved → {results_path}")
- 
+    """
  
 # ──────────────────────────────────────────────
 # Main
 # ──────────────────────────────────────────────
  
 def main(preprocessed_dir: Path, output_dir: Path) -> None:
-    output_dir.mkdir(parents=True, exist_ok=True)
+    #output_dir.mkdir(parents=True, exist_ok=True)
  
     # Step 1 — Load data
     X, y = load_data(preprocessed_dir)
